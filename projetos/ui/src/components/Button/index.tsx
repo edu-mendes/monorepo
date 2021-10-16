@@ -1,12 +1,10 @@
 import React from 'react';
 
 
-export default function Button({ children }){
+export default function Button(){
     return(
         <button>
-            {children}
+            Botao dentro de @edu-mendes 
         </button>
     )
 }
-
-
