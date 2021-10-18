@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Button from './index';
+
+<Meta title="Components/Commons/Button" component={Button}/>
+
+# Button
+
+Aqui você pode aprender a utilizar o componente button! E ele é incrivel
+
+<ArgsTable of={Button} />
+
+## Batao Simples
+
+<Canvas>
+    <Story 
+        name="Botao Simples"
+        args={{ children: "Botao Simples" }}
+    >
+        {(args) => <Button {...args} />}
+    </Story>
+</Canvas>
+
+## Batao Desabilitado
+
+<Canvas>
+    <Story 
+        name="Botao Desabilitado"
+        args={{ children: "Botao Desabilitado", disabled: true }}
+    >
+        {(args) => <Button {...args} />}
+    </Story>
+</Canvas>
